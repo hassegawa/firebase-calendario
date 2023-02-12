@@ -1,1 +1,12 @@
-<p>calendario works!</p>
+<div class="divCalendario">
+    
+    <full-calendar id="calendarioComp" #calendarioComp [options]="calendarOptions" style="width: 700px; height: 532px;"></full-calendar>
+</div>
+
+<mat-grid-list cols="5" class="divCalendario" rowHeight="800px" colHe>   
+    <mat-grid-tile colspan="4" >
+    </mat-grid-tile> 
+    <mat-grid-tile>
+        <button (click)="getDate()"></button>
+    </mat-grid-tile>
+</mat-grid-list>

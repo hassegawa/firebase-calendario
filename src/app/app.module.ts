@@ -10,7 +10,9 @@ import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatIconModule } from '@angular/material/icon';
 import { MatDividerModule } from '@angular/material/divider';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { UserComponent } from './user/user.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
 
 @NgModule({
   declarations: [
@@ -27,6 +29,8 @@ import { UserComponent } from './user/user.component';
     MatButtonModule,
     MatIconModule,
     MatDividerModule,
+    MatGridListModule,
+    FullCalendarModule 
   ],
   providers: [],
   bootstrap: [AppComponent]

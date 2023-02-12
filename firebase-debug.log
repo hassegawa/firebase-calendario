@@ -1,0 +1,43 @@
+[debug] [2023-02-12T01:47:08.410Z] ----------------------------------------------------------------------
+[debug] [2023-02-12T01:47:08.412Z] Command:       C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2023-02-12T01:47:08.413Z] CLI Version:   11.22.0
+[debug] [2023-02-12T01:47:08.413Z] Platform:      win32
+[debug] [2023-02-12T01:47:08.413Z] Node Version:  v18.13.0
+[debug] [2023-02-12T01:47:08.414Z] Time:          Sat Feb 11 2023 22:47:08 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2023-02-12T01:47:08.415Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-02-12T01:47:08.418Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2023-02-12T01:47:08.539Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-02-12T01:47:08.539Z] > authorizing via signed-in user (mhassegawa@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Projetos\Calendar
+
+Before we get started, keep in mind:
+
+  * You are currently outside your home directory
+  * You are initializing within an existing Firebase project directory
+
+[warn] !  Unable to fetch the CLI MOTD and remote config. 
+[debug] [2023-02-12T01:47:08.664Z] Failed to fetch MOTD FirebaseError: Failed to make request to https://firebase-public.firebaseio.com/cli.json
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2023-02-12T01:47:13.924Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=100
+[debug] [2023-02-12T01:47:14.018Z] Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+[debug] [2023-02-12T01:47:14.319Z] FirebaseError: Failed to make request to https://firebase.googleapis.com/v1beta1/projects?pageSize=100
+    at RetryOperation._fn (C:\Users\marcio.hassegawa\AppData\Roaming\nvm\v18.13.0\node_modules\firebase-tools\lib\apiv2.js:242:31)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
